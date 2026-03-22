@@ -1,6 +1,9 @@
 name: Build iOS Unsigned IPA
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       schedule_source_url:
